@@ -26,7 +26,6 @@ This library must be put in the head tag of html document.
             Import.JS('src/script-1', options);
             Import.CSS('src/style-1', options);
 
-
             //Import async. readyState = interactive || complete
             options.mode = 'async';
             Import.JS('src/script-2', options);
@@ -35,7 +34,9 @@ This library must be put in the head tag of html document.
             //Import defer. readyState = interactive in this case
             options.mode = 'defer' || null;
             Import.JS('src/script-3', options);
+            Import.JS('src/script-4');
             Import.CSS('src/style-3', options);
+            Import.CSS('src/style-3');
 
         </script>
     </head>
