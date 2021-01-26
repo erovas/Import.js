@@ -1,5 +1,5 @@
 # Import.js
-Small library for importing scripts into html document.
+Small library for importing scripts into html document (using XHR).
 
 ## Compatibility
 
