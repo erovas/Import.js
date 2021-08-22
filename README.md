@@ -18,8 +18,8 @@ This library must be put in the head tag of html document.
 
             const options = {
                 mode: 'sync',          //optional for "defer" mode
-                onload: function(){},  //optional
-                onerror: function(){}  //optional
+                load: function(){},  //optional
+                error: function(){}  //optional
             }
 
             //Import sync (block parser). readyState = loading in this case
