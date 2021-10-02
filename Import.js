@@ -97,6 +97,7 @@
             }
             else {
                 tag.async = false;
+                tag.defer = true;
                 tag.src = src;
             }
             tag.onload = function(){
