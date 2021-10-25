@@ -54,13 +54,13 @@
                 let style_temp = document.createElement('style');
                 style_temp.innerHTML = responseText;
                 HEAD.appendChild(style_temp);
-                
+                HEAD.appendChild(tag);
+
                 let rules = style_temp.sheet.cssRules
                 for (let i = 0; i < rules.length; i++)
-                    tag.sheet.insertRule(rules[i], i);
+                    tag.sheet.insertRule(rules[i].cssText, i);
                 
                 HEAD.removeChild(style_temp);
-                HEAD.appendChild(tag);
                 load(tag);
             }
             else {
